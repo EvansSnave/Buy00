@@ -1,9 +1,35 @@
-@import "../../../assets/styles/responsive";
+nav {
+  container: navegator / inline-size;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1vw;
+}
 
-.icon-container {
-  width: 5vw; height: 5vw;
+.info {
+  display: inherit;
+  align-items: center;
 
-  @include tablet-size {
-    width: 7vw; height: 7vw;
+  p {
+    font-size: var(--main-font-size);
+  }
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1cqi;
+
+  li, button {
+    font-size: var(--main-font-size);
+  }
+}
+
+svg {
+  width: 5cqh;
+}
+
+@container navegator (min-width: 500px) {
+  .info {
+    background-color: red;
   }
 }
