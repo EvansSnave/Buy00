@@ -17,10 +17,11 @@ ul {
 }
 
 .icon-container {
-  width: clamp(50px, 4cqi + 1vw, 80px);
+  width: var(--icon-size);
+  display: flex;
 
   svg {
-    width: 100%;
+    height: 100%;
   }
 }
 
