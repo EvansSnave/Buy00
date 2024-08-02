@@ -2,30 +2,26 @@ nav {
   container: navegator / inline-size;
   display: flex;
   justify-content: space-between;
-  padding: 0 1vw;
+  padding: 0 1cqi;
 }
 
 .info {
   display: inherit;
   align-items: center;
-
-  p {
-    font-size: var(--main-font-size);
-  }
 }
 
 ul {
   display: flex;
   align-items: center;
   gap: 1cqi;
-
-  li, button {
-    font-size: var(--main-font-size);
-  }
 }
 
-svg {
-  width: 5cqh;
+.icon-container {
+  width: clamp(50px, 4cqi + 1vw, 80px);
+
+  svg {
+    width: 100%;
+  }
 }
 
 @container navegator (min-width: 500px) {
