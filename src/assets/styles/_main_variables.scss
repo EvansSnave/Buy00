@@ -1,5 +1,6 @@
 :root {
   --main-font-size: calc(2rem - clamp(0.8rem, 2dvw, 1.08rem));
-  --main-padding: calc(1dvw + 1rem) calc(9dvw + 1rem) 0;
+  --main-padding: calc(-2rem + clamp(0rem, 2dvw + 1rem, 2dvw + 2rem)) 
+                  calc(-4rem + clamp(0rem, 7dvw + 1rem, 9dvw + 1rem)) 0;
   --icon-size: calc(4rem - clamp(0rem, 2dvw, 0.3rem));
 }

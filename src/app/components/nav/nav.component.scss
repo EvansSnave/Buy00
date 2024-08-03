@@ -2,6 +2,7 @@ nav {
   container: navegator / inline-size;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .info {
@@ -18,10 +19,6 @@ ul {
 .icon-container {
   width: var(--icon-size);
   display: flex;
-
-  svg {
-    height: 100%;
-  }
 }
 
 @container navegator (min-width: 500px) {
