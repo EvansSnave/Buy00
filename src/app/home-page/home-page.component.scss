@@ -1,7 +1,7 @@
 .svg-welcome {
   position: absolute;
-  width: clamp(2rem, 60dvw + 1rem, 100rem);
+  width: clamp(40rem, 60dvw + 20rem, 60rem);
   right: 0;
   top: 0;
-  z-index: 10;
+  z-index: -10;
 }

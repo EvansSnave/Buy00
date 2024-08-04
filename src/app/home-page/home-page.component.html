@@ -1,9 +1,21 @@
 <div class="svg-welcome">
-  <svg viewBox="0 0 25 15" preserveAspectRatio="xMinYMix">
+  <svg viewBox="0 0 25 15" preserveAspectRatio="xMinYMin">
+    <defs>
+      <linearGradient id="grad1" x1="100%" x2="40%" y1="0%" y2="0%">
+        <stop offset="0%" stop-color="#aa6cff" />
+        <stop offset="100%" stop-color="#684fff" />
+      </linearGradient>
+      <linearGradient id="grad2" x1="100%" x2="30%" y1="0%" y2="0%">
+        <stop offset="0%" stop-color="#aa6cff" />
+        <stop offset="100%" stop-color="#6b4bfd" />
+      </linearGradient>
+    </defs>
     <path 
-      d="M2 0Q-1 0 1 3L7 13Q8 15 10 15 19.5 15 40 15L40 0Z"
-      fill="red"
+      d="M2 0Q-1 0 1 3L7 13Q8 15 10 15 19.5 15 25 15L25 0Z"
+      fill="url(#grad1)"
     />
+    <circle cx="15" cy="3" r="7" fill="url(#grad2)"/>
+    <circle cx="22" cy="15" r="4" fill="url(#grad2)"/>
   </svg>
 </div>
 <welcome />

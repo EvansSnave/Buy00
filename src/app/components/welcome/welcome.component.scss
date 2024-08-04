@@ -1,0 +1,14 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+section {
+  container: welcome / inline-size;
+}
+
+@container welcome (max-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
