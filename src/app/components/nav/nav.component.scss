@@ -21,9 +21,3 @@ ul {
   width: var(--icon-size);
   display: flex;
 }
-
-@container navegator (min-width: 500px) {
-  .info {
-    background-color: red;
-  }
-}
