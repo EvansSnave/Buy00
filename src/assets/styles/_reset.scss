@@ -7,13 +7,17 @@
   box-sizing: border-box;
   text-decoration: none;
   border: 0;
-  background-color: transparent;
-  color: black;
   text-rendering: optimizeLegibility;
   text-size-adjust: none;
   font-family: 'Main', 'sans-serif';
 }
 
+body {
+  color: black;
+  background-color: white;
+}
+
 button {
   cursor: pointer;
+  background-color: transparent;
 }

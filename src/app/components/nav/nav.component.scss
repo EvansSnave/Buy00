@@ -2,8 +2,10 @@ nav {
   container: navegator / inline-size;
   display: flex;
   justify-content: space-between;
-  position: relative;
+  position: fixed;
   z-index: 100;
+  top: 0;
+  padding-top: calc(-3rem + clamp(0rem, 4dvw + 1rem, 10rem));
 }
 
 .info {

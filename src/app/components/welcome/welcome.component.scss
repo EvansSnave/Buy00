@@ -1,10 +1,12 @@
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  place-items: center;
 }
 
 section {
   container: welcome / inline-size;
+  margin-top: calc(-1rem + clamp(6rem, 10dvw + 1rem, 15rem));
 }
 
 @container welcome (max-width: 700px) {
