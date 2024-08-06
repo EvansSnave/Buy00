@@ -29,9 +29,31 @@ ul {
 .icon-container {
   width: var(--icon-size);
   display: flex;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    #cloud {
+      fill: green;
+    }
+    #sub-cloud {
+      fill: red;
+    }
+  }
+}
+
+#cloud, #sub-cloud {
+  transition: all 1s ease;
 }
 
 .wrapper {
   display: flex;
   gap: 30px;
+}
+
+p {
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: calc(2.3rem - clamp(0.8rem, 2dvw + 0.1rem, 1rem));;
 }
