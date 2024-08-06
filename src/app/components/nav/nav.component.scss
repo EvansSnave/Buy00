@@ -4,8 +4,11 @@ nav {
   justify-content: space-between;
   position: fixed;
   z-index: 100;
+  padding: var(--main-padding) 0;
   top: 0;
-  padding-top: calc(-3rem + clamp(0rem, 4dvw + 1rem, 10rem));
+  left: 0;
+  width: 100%;
+  padding-top: calc(-3rem + clamp(0rem, 5dvw + 1rem, 15rem));
 }
 
 .info {
@@ -16,10 +19,19 @@ nav {
 ul {
   display: flex;
   align-items: center;
-  gap: 1cqi;
+  gap: 3cqi;
+  background-color: var(--nav-color);
+  color: var(--nav-font-color);
+  padding: calc(0.5dvw + 0.5rem) calc(2dvw + 0.5rem);
+  border-radius: 2dvw;
 }
 
 .icon-container {
   width: var(--icon-size);
   display: flex;
+}
+
+.wrapper {
+  display: flex;
+  gap: 30px;
 }
