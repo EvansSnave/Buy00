@@ -1,4 +1,4 @@
-import { Component,computed, signal } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { TabComponent } from './tab/tab.component';
 
 @Component({
@@ -10,7 +10,7 @@ import { TabComponent } from './tab/tab.component';
 })
 export class TabsInfoComponent {
 
-  private tabs = signal<TabComponent[]>([]);
+  tabs = signal<TabComponent[]>([]);
   private activeTab = signal<TabComponent | null>(null);
 
   addTab(tab: TabComponent) {
