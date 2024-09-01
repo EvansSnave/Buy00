@@ -20,10 +20,13 @@
 </div>
 <welcome />
 <tabs-info>
-  <tab title="first">
-    <p>First tab</p>
-  </tab>
-  <tab title="second">
-    <p>Hello</p>
-  </tab>
+  @if(cars()) {
+    @for(car of cars(); track car.id) {
+      <tab [title]="car.name">
+        <p>Car id: {{car.id}}</p>
+        <p>Car name: {{car.name}}</p>
+        <p>Car price: {{car.price}}</p>
+      </tab>
+    }
+  }
 </tabs-info>

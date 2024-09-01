@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { WelcomeComponent } from '../components/welcome/welcome.component';
 import { TabsInfoComponent } from './tabs-info/tabs-info.component';
 import { TabComponent } from './tabs-info/tab/tab.component';
+import { CarsService } from '../services/cars/cars.service';
+import { ICar } from '../types';
+import { Observable, map } from 'rxjs';
 
 @Component({
   selector: 'app-home-page',
@@ -12,7 +15,9 @@ import { TabComponent } from './tabs-info/tab/tab.component';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor() { }
+  cars = this.carsService.getCarsSignal();
+
+  constructor(private carsService: CarsService) { }
 
   ngOnInit() {
   }
