@@ -2,6 +2,7 @@
   <div>
     @for(tab of tabs(); track tab) {
       <button 
+        type="button"
         (click)="selectTab(tab)"
         [class.active]="isActive(tab)"
       >

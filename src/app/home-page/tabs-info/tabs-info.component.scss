@@ -1,3 +1,18 @@
+$tab-border: 0 2rem 0 0;
+
 section {
   padding: var(--main-padding);
+}
+
+div {
+  background-color: var(--tab-container-background);
+  display: flex;
+  padding: var(--internal-tab-padding);
+  border-radius: var(--round-border) var(--round-border) 0 0;
+}
+
+button {
+  background-color: var(--tab-background);
+  padding: var(--tab-padding);
+  border-radius: $tab-border;
 }
