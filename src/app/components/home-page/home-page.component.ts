@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { WelcomeComponent } from '../components/welcome/welcome.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 import { TabsInfoComponent } from './tabs-info/tabs-info.component';
 import { TabComponent } from './tabs-info/tab/tab.component';
-import { CarsService } from '../services/cars/cars.service';
-import { FeaturesComponent } from '../components/features/features.component';
+import { CarsService } from '../../services/cars/cars.service';
+import { FeaturesComponent } from '../features/features.component';
 
 @Component({
   selector: 'app-home-page',
