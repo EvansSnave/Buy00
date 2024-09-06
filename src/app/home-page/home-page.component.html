@@ -23,10 +23,13 @@
   @if(cars()) {
     @for(car of cars(); track car.id) {
       <tab [title]="car.name">
-        <p>Car id: {{car.id}}</p>
-        <p>Car name: {{car.name}}</p>
-        <p>Car price: {{car.price}}</p>
+        <div>
+          <h1>{{car.name}}</h1>
+          <p>Car price: {{car.price}}</p>
+        </div>
+        <div></div>
       </tab>
     }
   }
 </tabs-info>
+<features />

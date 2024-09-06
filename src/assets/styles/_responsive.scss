@@ -4,6 +4,12 @@ $breakpoint-md: 1024px;
 $breakpoint-l: 1200px;
 $breakpoint-xl: 1900px;
 
+@mixin large-desktop-size {
+  @media (max-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
 @mixin desktop-size {
   @media (max-width: $breakpoint-l) {
     @content;

@@ -1,3 +1,7 @@
 div {
   background-color: var(--tab-container-background);
+  display: flex;
+  padding: var(--internal-tab-padding);
+  padding-bottom: 10px;
+  border-radius: 0 0 var(--round-border) var(--round-border);
 }

@@ -3,11 +3,17 @@ import { WelcomeComponent } from '../components/welcome/welcome.component';
 import { TabsInfoComponent } from './tabs-info/tabs-info.component';
 import { TabComponent } from './tabs-info/tab/tab.component';
 import { CarsService } from '../services/cars/cars.service';
+import { FeaturesComponent } from '../components/features/features.component';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [WelcomeComponent, TabsInfoComponent, TabComponent],
+  imports: [
+    WelcomeComponent, 
+    TabsInfoComponent, 
+    TabComponent,
+    FeaturesComponent
+  ],
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss']
 })

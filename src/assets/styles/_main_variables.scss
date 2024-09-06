@@ -1,5 +1,23 @@
+@import "responsive";
+
 :root {
-  --main-font-size: calc(2rem - clamp(0.8rem, 2dvw + 0.1rem, 1rem));
+  --main-font-size: 1rem;
+
+  @include large-desktop-size {
+    --main-font-size: 1.3rem;
+  }
+
+  @include desktop-size {
+    --main-font-size: 1.5rem;
+  }
+
+  @include tablet-size {
+    --main-font-size: 1.8rem;
+  }
+
+  @include phone-size {
+    --main-font-size: 2rem;
+  }
   --main-padding: 0 calc(-7rem + clamp(0rem, 18dvw + 1rem, 60rem));
   --icon-size: calc(5rem - clamp(0rem, 2dvw + 1rem, 0.2rem));
 
