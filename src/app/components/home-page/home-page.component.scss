@@ -1,6 +1,29 @@
+@import "responsive";
+
 .svg-welcome {
   position: absolute;
-  width: clamp(40rem, 60dvw + 20rem, 80rem);
+  width: 90rem;
+
+  @include large-desktop-size {
+    width: 80rem;
+  }
+  
+  @include desktop-size {
+    width: 70rem;
+  }
+  
+  @include tablet-size {
+    width: 60rem;
+  }
+  
+  @include phone-size {
+    width: 60rem;
+  }
+  
+  @include slim-phone-size {
+    width: 70rem;
+  }
+
   right: 0;
   top: 0;
   z-index: -10;

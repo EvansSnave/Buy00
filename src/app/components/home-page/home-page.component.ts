@@ -3,7 +3,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { TabsInfoComponent } from './tabs-info/tabs-info.component';
 import { TabComponent } from './tabs-info/tab/tab.component';
 import { CarsService } from '../../services/cars/cars.service';
-import { FeaturesComponent } from '../features/features.component';
+import { FeaturesComponent } from './features/features.component';
 
 @Component({
   selector: 'app-home-page',

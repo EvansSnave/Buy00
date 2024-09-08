@@ -5,14 +5,14 @@ section {
 }
 
 div {
-  background-color: var(--tab-container-background);
+  background-color: #a1a1a1;
   display: flex;
-  padding: var(--internal-tab-padding);
+  padding: 1rem;
   border-radius: var(--round-border) var(--round-border) 0 0;
 }
 
 button {
   background-color: var(--tab-background);
-  padding: var(--tab-padding);
+  padding: 1rem;
   border-radius: $tab-border;
 }
