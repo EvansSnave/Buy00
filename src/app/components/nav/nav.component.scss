@@ -8,7 +8,6 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: calc(-3rem + clamp(0rem, 5dvw + 1rem, 15rem));
 }
 
 .info {
@@ -22,7 +21,7 @@ ul {
   gap: 3cqi;
   background-color: var(--nav-color);
   color: var(--nav-font-color);
-  padding: calc(0.5dvw + 0.5rem) calc(2dvw + 0.5rem);
+  padding: 1em;
   border-radius: 2dvw;
 }
 
@@ -55,5 +54,4 @@ ul {
 p {
   padding-left: 10px;
   font-weight: 700;
-  font-size: calc(2.3rem - clamp(0.8rem, 2dvw + 0.1rem, 1rem));;
 }

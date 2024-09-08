@@ -36,7 +36,5 @@
   }
 
   --icon-size: calc(5rem - clamp(0rem, 2dvw + 1rem, 0.2rem));
-
-  --internal-tab-padding: calc(-5rem + clamp(0rem, 12dvw + 2rem, 7rem)) calc(-7rem + clamp(0rem, 15dvw + 2rem, 10rem)) 0;
   --tab-padding: calc(2rem - clamp(0.8rem, 2dvw + 0.1rem, 1rem)) calc(-7rem + clamp(0rem, 15dvw + 2rem, 8rem)) 0;
 }
