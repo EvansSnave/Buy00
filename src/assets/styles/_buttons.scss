@@ -1,0 +1,21 @@
+$button-main-padding: calc(2rem - clamp(0rem, 1dvw + 0.5rem, 0.8rem)) calc(2.3rem - clamp(0rem, 1dvw + 0.5rem, 0.8rem));
+
+%button-styles {
+  padding: $button-main-padding;
+  border-radius: 100px;
+}
+
+.main-button {
+  @extend %button-styles;
+  background-color: var(--main-theme);
+}
+
+.secondary-button {
+  @extend %button-styles;
+  background-color: var(--secondary-color);
+}
+
+.nav-button {
+  @extend %button-styles;
+  background-color: var(--nav-button-color);
+}

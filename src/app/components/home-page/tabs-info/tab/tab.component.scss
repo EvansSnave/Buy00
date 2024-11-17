@@ -1,0 +1,29 @@
+@import "responsive";
+
+div {
+  background-color: #a1a1a1;
+  display: flex;
+  padding: 2rem;
+  
+  @include large-desktop-size {
+    padding: 3rem;
+  }
+  
+  @include desktop-size {
+    padding: 4rem;
+  }
+  
+  @include tablet-size {
+    padding: 3rem;
+  }
+  
+  @include phone-size {
+    padding: 2rem;
+  }
+  
+  @include slim-phone-size {
+    padding: 1rem;
+  }
+
+  border-radius: 0 0 var(--round-border) var(--round-border);
+}

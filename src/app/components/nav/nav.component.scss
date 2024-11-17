@@ -1,0 +1,57 @@
+nav {
+  container: navegator / inline-size;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  padding: var(--main-padding) 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.info {
+  display: inherit;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 3cqi;
+  background-color: var(--nav-color);
+  color: var(--nav-font-color);
+  padding: 1em;
+  border-radius: 2dvw;
+}
+
+.icon-container {
+  width: 2rem;
+  display: flex;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    #cloud {
+      fill: green;
+    }
+    #sub-cloud {
+      fill: red;
+    }
+  }
+}
+
+#cloud, #sub-cloud {
+  transition: all 1s ease;
+}
+
+.wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+p {
+  padding-left: 10px;
+  font-weight: 700;
+}

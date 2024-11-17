@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: var(--main-font-size);
+  font-weight: 400;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: none;
+  font-family: 'Main', 'sans-serif';
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: black;
+  background-color: white;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}

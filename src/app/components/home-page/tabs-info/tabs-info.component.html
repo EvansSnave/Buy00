@@ -1,0 +1,14 @@
+<section>
+  <div>
+    @for(tab of tabs(); track tab) {
+      <button 
+        type="button"
+        (click)="selectTab(tab)"
+        [class.active]="isActive(tab)"
+      >
+        {{tab.title()}}
+      </button>
+    }
+  </div>
+  <ng-content></ng-content>
+</section>
